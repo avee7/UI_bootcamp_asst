@@ -1,0 +1,24 @@
+{
+  "name": "ui_bootcamp_asst",
+  "version": "1.0.0",
+  "description": "Node modules for UI bootcamp assignment",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/avee9/UI_bootcamp_asst.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/avee9/UI_bootcamp_asst/issues"
+  },
+  "homepage": "https://github.com/avee9/UI_bootcamp_asst#readme",
+  "devDependencies": {
+    "gulp": "^3.9.0",
+    "gulp-sass": "^2.1.1",
+    "node-bourbon": "^4.2.3"
+  }
+}
