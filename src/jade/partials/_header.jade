@@ -1,0 +1,27 @@
+header.header
+  .sub-header
+    .cart
+      .cart__count 12
+      .cart__icon
+    a.link.sub-header__link(href='/my-account.html', title='Link to Account page') My Account
+    form.sub-header__search(method='POST', action='/search', autocomplete)
+      label.label(for='search') Search Website
+      input#search(type='search', placeholder="Enter search terms", name='search')
+      button(type='submit') Search
+
+  .navigation__wrapper
+    nav.navigation
+      h1 Page title
+      ul.navigation__menu
+        li.navigation__item
+          a.navigation__link(href="/home", title='Link to home page') Home
+        li.navigation__item
+          a.navigation__link(href="/events", title='Link to upcoming events') Events
+        li.navigation__item
+          a.navigation__link(href="/accessories", title='Link to accessories you can buy') Accessories
+        li.navigation__item
+          a.navigation__link(href="/apparel", title='Link to Apparel you can buy') Apparel
+        li.navigation__item
+          a.navigation__link(href="/featured", title='Link to the list of featured items curated by the Editor') Featured Items
+
+
