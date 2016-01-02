@@ -7,8 +7,9 @@ var gulp = require('gulp'),
     del = require('del'),
     watch = require('gulp-watch'),
     neat = require('node-neat').includePaths,
-    normalize = require('node-normalize-scss').includePaths;
-
+    normalize = require('node-normalize-scss').includePaths,
+    csslint = require('gulp-csslint'),
+    gutil = require('gulp-util');
 
 gulp.task('clean', function (cb) {
     return del([
@@ -45,10 +46,29 @@ gulp.task('assets', function() {
         .pipe(connect.reload());
 });
 
+// csslint.addRule({
+    // rule information 
+// });
+
+var customReporter = function(file) {
+  gutil.log(gutil.colors.cyan(file.csslint.errorCount)+' errors');
+ 
+  file.csslint.results.forEach(function(result) {
+    gutil.log(gutil.colors.cyan(result.error.message)+' on line '+ gutil.colors.magenta(result.error.line));
+  });
+};
+
+gulp.task('lint', function() {
+  gulp.src('./public/css/main.css')
+    .pipe(csslint())
+    .pipe(csslint.reporter(customReporter));
+});
+
 gulp.task('watch', function() {
   gulp.watch('src/sass**/*', ['css']);
   gulp.watch('src/assets/*', ['assets']);
   gulp.watch('src/**/*.jade', ['html']);
+  gulp.watch('./public/css/main.css', ['lint']);
   watch('./public/**/*').pipe(connect.reload());
 });
 
