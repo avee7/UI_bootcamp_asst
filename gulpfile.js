@@ -47,12 +47,12 @@ gulp.task('assets', function() {
 });
 
 // csslint.addRule({
-    // rule information 
+    // rule information
 // });
 
 var customReporter = function(file) {
   gutil.log(gutil.colors.cyan(file.csslint.errorCount)+' errors');
- 
+
   file.csslint.results.forEach(function(result) {
     gutil.log(gutil.colors.cyan(result.error.message)+' on line '+ gutil.colors.magenta(result.error.line));
   });
@@ -87,4 +87,4 @@ gulp.task('deploy', function () {
 
 gulp.task('build', ['clean', 'html', 'css', 'assets']);
 
-gulp.task('default', ['clean', 'serve', 'watch']);
+gulp.task('default', ['serve', 'watch']);
