@@ -65,7 +65,7 @@ gulp.task('lint', function() {
 });
 
 gulp.task('watch', function() {
-  gulp.watch('src/sass**/*', ['css']);
+  gulp.watch('src/sass/**/*', ['css']);
   gulp.watch('src/assets/*', ['assets']);
   gulp.watch('src/**/*.jade', ['html']);
   gulp.watch('./public/css/main.css', ['lint']);

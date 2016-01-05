@@ -17,6 +17,7 @@
   },
   "homepage": "https://github.com/avee9/UI_bootcamp_asst#readme",
   "devDependencies": {
+    "css-reset": "0.0.1",
     "del": "^2.2.0",
     "gulp": "^3.9.0",
     "gulp-autoprefixer": "^3.1.0",
