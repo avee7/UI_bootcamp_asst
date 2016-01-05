@@ -42,7 +42,7 @@ gulp.task('html', function () {
 gulp.task('assets', function() {
     gulp.src(['src/assets/**/*'])
         .pipe(plumber(''))
-        .pipe(gulp.dest('./public/assets'))
+        .pipe(gulp.dest('./public/assets/'))
         .pipe(connect.reload());
 });
 
