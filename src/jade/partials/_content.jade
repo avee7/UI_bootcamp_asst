@@ -1,3 +1,5 @@
+- var product_list = {1:{'image': './assets/images/p1.jpg', 'image_medium': './assets/images/p1_medium.jpg, ./assets/images/p1_medium_retina.jpg 2x', 'image_small': './assets/images/p1_small.jpg, ./assets/images/p1_small_retina.jpg 2x', 'title': 'Item Title', 'category': 'Item1 Category', 'price': '$88.0'}, 2:{'image': './assets/images/p1.jpg', 'image_medium': './assets/images/p1_medium.jpg, ./assets/images/p1_medium_retina.jpg 2x', 'image_small': './assets/images/p1_small.jpg, ./assets/images/p1_small_retina.jpg 2x', 'title': 'Item Title', 'category': 'Item2 Category', 'price': '$98.0'}, 3:{'image': './assets/images/p1.jpg', 'image_medium': './assets/images/p1_medium.jpg, ./assets/images/p1_medium_retina.jpg 2x', 'image_small': './assets/images/p1_small.jpg, ./assets/images/p1_small_retina.jpg 2x', 'title': 'Item Title', 'category': 'Item3 Category', 'price': '$28.0'},4:{'image': './assets/images/p1.jpg', 'image_medium': './assets/images/p1_medium.jpg, ./assets/images/p1_medium_retina.jpg 2x', 'image_small': './assets/images/p1_small.jpg, ./assets/images/p1_small_retina.jpg 2x', 'title': 'Item Title', 'category': 'Item4 Category', 'price': '$67.0'}}
+
 section.main_section
 
   //include _slider
@@ -6,51 +8,4 @@ section.main_section
 
   p.section_description Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam at est at nisi tristique fermentum a quis mauris. Suspendisse ut finibus magna. In vulputate dui at lorem tincidunt posuere. In ut cursus nulla, sed semper urna. Praesent tincidunt mattis nisi, ac porttitor tellus dapibus sed. Proin ac dui id leo tristique fringilla a nec nulla. Suspendisse iaculis justo vitae ligula vehicula, vel malesuada odio consequat. Sed nec fermentum nibh, quis sollicitudin sem. Donec molestie feugiat ex quis vulputate. Sed convallis purus sed arcu blandit placerat. Donec sed erat lectus. Praesent non magna non mi blandit blandit.
 
-  ul.product-list
-    li.product-list__item
-      a.product_link(href="javascript:void(0)", title='product1')
-        picture
-          source(srcset="./assets/images/p1_small.jpg", media="(max-width: 43.75em)")
-          source(srcset="./assets/images/p1_medium.jpg", media="(max-width: 56.25em)")
-          source(srcset="./assets/images/p1.jpg", media="(min-width: 56.25em)")
-          img(srcset="./assets/images/p1.jpg", alt="My default image")
-
-        h4 Item Title
-        p.product_category Item Category
-        p.product_price $88.0
-
-    li.product-list__item
-      a.product_link(href="javascript:void(0)", title='product1')
-        picture
-          source(srcset="./assets/images/p1_small.jpg", media="(max-width: 43.75em)")
-          source(srcset="./assets/images/p1_medium.jpg", media="(max-width: 56.25em)")
-          source(srcset="./assets/images/p1.jpg", media="(min-width: 56.25em)")
-          img(srcset="./assets/images/p1.jpg", alt="My default image")
-
-        h4 Item Title
-        p.product_category Item Category
-        p.product_price $88.0
-
-    li.product-list__item
-      a.product_link(href="javascript:void(0)", title='product1')
-        picture
-          source(srcset="./assets/images/p1_small.jpg", media="(max-width: 43.75em)")
-          source(srcset="./assets/images/p1_medium.jpg", media="(max-width: 56.25em)")
-          source(srcset="./assets/images/p1.jpg", media="(min-width: 56.25em)")
-          img(srcset="./assets/images/p1.jpg", alt="My default image")
-
-        h4 Item Title
-        p.product_category Item Category
-        p.product_price $88.0
-
-    li.product-list__item
-      a.product_link(href="javascript:void(0)", title='product1')
-        picture
-          source(srcset="./assets/images/p1_small.jpg", media="(max-width: 43.75em)")
-          source(srcset="./assets/images/p1_medium.jpg", media="(max-width: 56.25em)")
-          source(srcset="./assets/images/p1.jpg", media="(min-width: 56.25em)")
-          img(srcset="./assets/images/p1.jpg", alt="My default image")
-
-        h4 Item Title
-        p.product_category Item Category
-        p.product_price $88.0
+  include _product-list
