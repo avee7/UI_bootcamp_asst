@@ -1,22 +1,29 @@
 .footer {
   @include outer-container(100%);
+  @include container-padding;
+
   background-color: $footer-background-color;
+  color: $footer-text-color;
 }
 
-  .footer__navigation {
-    @include media($medium) {
-      @include span-columns(3);
-    }
+.footer__navigation {
+  @include media($medium) {
+    @include span-columns(3);
   }
+}
 
-  .promotions {
-     @include media($medium) {
-       @include span-columns(6);
-     }
+.footer__promotions {
+  @include media($medium) {
+    @include span-columns(6);
   }
+}
 
-  .upcoming-product {
-     @include media($medium) {
-       @include span-columns(3);
-     }
+.footer__upcoming-product {
+  @include media($medium) {
+    @include span-columns(3);
   }
+}
+
+.footer__label {
+  padding-bottom: 0.75rem;
+}

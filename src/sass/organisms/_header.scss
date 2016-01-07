@@ -1,0 +1,8 @@
+.sub-header {
+  @include container-padding;
+  background-color: $sub-header-background-color;
+}
+
+.navigation__wrapper {
+  @include container-padding;
+}
