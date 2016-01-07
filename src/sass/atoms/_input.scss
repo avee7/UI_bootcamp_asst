@@ -1,6 +1,10 @@
+.select-container {
+  border: 1px solid $input-border-color;
+}
+
 select {
   width: $full-width;
   height: 3em;
-  border: 1px solid $input-border-color;
+  border: none;
   background-color: $white;
 }

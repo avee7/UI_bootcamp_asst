@@ -58,9 +58,16 @@ var customReporter = function(file) {
   });
 };
 
+var lintUnWantedProperties = {
+  'box-sizing': false,
+  'universal-selector': false,
+  'unique-headings': false,
+  'font-sizes': false
+};
+
 gulp.task('lint', function() {
   gulp.src('./public/css/main.css')
-    .pipe(csslint())
+    .pipe(csslint(lintUnWantedProperties))
     .pipe(csslint.reporter(customReporter));
 });
 
