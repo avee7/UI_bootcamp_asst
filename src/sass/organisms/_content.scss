@@ -1,4 +1,4 @@
-section {
+.section {
   padding: 1rem;
 
   @include media($medium) {
@@ -10,3 +10,18 @@ section {
     padding-right: 4rem;
   }
 }
+
+.products {
+  @include outer-container($full-width);
+}
+
+  .product__item {
+    @include span-columns(6);
+    @include omega(2);
+
+    @include media($medium) {
+      @include span-columns(3);
+      @include omega-reset(2);
+      @include omega(4);
+    }
+  }

@@ -1,0 +1,22 @@
+.footer {
+  @include outer-container(100%);
+  background-color: $footer-background-color;
+}
+
+  .footer__navigation {
+    @include media($medium) {
+      @include span-columns(3);
+    }
+  }
+
+  .promotions {
+     @include media($medium) {
+       @include span-columns(6);
+     }
+  }
+
+  .upcoming-product {
+     @include media($medium) {
+       @include span-columns(3);
+     }
+  }

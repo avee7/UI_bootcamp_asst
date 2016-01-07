@@ -1,8 +1,8 @@
-ul.product-list
+ul.products
 
   each val, index in product_list
-    li.product-list__item
-      a.product-list__link(href="javascript:void(0)", title="product" + index)
+    li.product__item
+      a.product__link(href="javascript:void(0)", title="product" + index)
         picture
           source(srcset=val['image_small'], media="(max-width: 43.75em)")
           source(srcset=val['image_medium'], media="(max-width: 56.25em)")
@@ -10,5 +10,5 @@ ul.product-list
           img(srcset=val['image'])
 
       h4= val['title']
-      p.product_category= val['category']
-      p.product_price= val['price']
+      p.product__category= val['category']
+      p.product__price= val['price']
