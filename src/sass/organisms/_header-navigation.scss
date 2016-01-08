@@ -1,21 +1,25 @@
-.navigation__wrapper {
-  .navigation {
-    float: left;
-  }
+.select-container {
+  @include span-columns(6);
 
-  .navigation__menu {
+  @include media($medium) {
     display: none;
-
-    @include media($medium) {
-      display: block;
-    }
   }
+}
 
-  .select-container {
-    float: right;
+.page-title {
+  @include span-columns(6);
 
-    @include media($medium) {
-      display: none;
-    }
+  @include media($medium) {
+    @include span-columns(3);
+  }
+}
+
+.navigation {
+  display: none;
+
+  @include media($medium) {
+    @include span-columns(7);
+    @include shift(2);
+    margin-right: 0;
   }
 }
