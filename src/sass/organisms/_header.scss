@@ -4,5 +4,6 @@
 }
 
 .navigation__wrapper {
+  @include outer-container(100%);
   @include container-padding;
 }

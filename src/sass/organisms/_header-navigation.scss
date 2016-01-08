@@ -1,0 +1,21 @@
+.navigation__wrapper {
+  .navigation {
+    float: left;
+  }
+
+  .navigation__menu {
+    display: none;
+
+    @include media($medium) {
+      display: block;
+    }
+  }
+
+  .select-container {
+    float: right;
+
+    @include media($medium) {
+      display: none;
+    }
+  }
+}
