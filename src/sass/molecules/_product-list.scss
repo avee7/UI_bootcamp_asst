@@ -1,18 +1,14 @@
 .product-list {
   @include outer-container;
-  .product-list__item {
-    @include span-columns(6);
-    @include omega(2);
+}
 
-    @include media($medium) {
-      @include span-columns(3);
-      @include omega-reset(2);
-      @include omega(4);
-    }
+.product-list__item {
+  @include span-columns(6);
+  @include omega(2);
 
-    img {
-      max-width: 100%;
-      height: auto;
-    }
+  @include media($medium) {
+    @include span-columns(3);
+    @include omega-reset(2);
+    @include omega(4);
   }
 }

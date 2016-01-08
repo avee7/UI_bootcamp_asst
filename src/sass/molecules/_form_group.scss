@@ -1,0 +1,28 @@
+.form__group {
+  margin-bottom: 1.5em;
+  @include outer-container($full-width);
+}
+
+.form__label {
+  display: block;
+
+  @include media($medium) {
+    @include span-columns(2);
+    @include shift(2);
+  }
+}
+
+.form__control {
+  @include span-columns(12);
+
+  @include media($medium) {
+    @include span-columns(6)
+  }
+}
+
+button.form__control {
+  @include media($medium) {
+    @include span-columns(2);
+    @include shift(4);
+  }
+}

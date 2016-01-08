@@ -11,6 +11,9 @@ html
     script(src="../assets/scripts/libs/picturefill.js")
   body
     main#main
-      include partials/_header
-      include partials/_content
-      include partials/_footer
+      include partials/shared/_header
+
+      section.section
+        block content
+
+      include partials/shared/_footer
