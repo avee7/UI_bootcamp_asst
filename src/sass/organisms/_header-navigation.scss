@@ -12,14 +12,23 @@
   @include media($medium) {
     @include span-columns(3);
   }
+  @include omega();
 }
 
 .navigation {
   display: none;
 
   @include media($medium) {
-    @include span-columns(7);
-    @include shift(2);
-    margin-right: 0;
+    @include span-columns(6);
+    @include shift(3);
+    @include omega();
+  }
+}
+
+.navigation__menu {
+  @include outer-container(100%);
+
+  .navigation__item {
+    @include span-columns(1 of 6);
   }
 }
