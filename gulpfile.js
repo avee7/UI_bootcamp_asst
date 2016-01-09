@@ -9,7 +9,8 @@ var gulp = require('gulp'),
     neat = require('node-neat').includePaths,
     normalize = require('node-normalize-scss').includePaths,
     csslint = require('gulp-csslint'),
-    gutil = require('gulp-util');
+    gutil = require('gulp-util'),
+    postcss = require('es6-promise').polyfill();
 
 gulp.task('clean', function (cb) {
     return del([

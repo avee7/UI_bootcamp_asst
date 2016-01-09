@@ -19,6 +19,7 @@
   "devDependencies": {
     "css-reset": "0.0.1",
     "del": "^2.2.0",
+    "es6-promise": "^3.0.2",
     "gulp": "^3.9.0",
     "gulp-autoprefixer": "^3.1.0",
     "gulp-connect": "^2.3.1",
