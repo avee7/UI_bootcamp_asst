@@ -2,17 +2,22 @@
   @include container-padding;
 }
 
-.products {
-  @include outer-container($full-width);
+.section__description {
+  padding: 1rem 0;
 }
 
-  .product__item {
-    @include span-columns(6);
-    @include omega(2);
+.products {
+  @include outer-container($full-width);
+  padding: 1rem 0;
+}
 
-    @include media($medium) {
-      @include span-columns(3);
-      @include omega-reset(2);
-      @include omega(4);
-    }
+.product__item {
+  @include span-columns(6);
+  @include omega(2);
+
+  @include media($medium) {
+    @include span-columns(3);
+    @include omega-reset(2);
+    @include omega(4);
   }
+}
