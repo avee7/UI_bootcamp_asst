@@ -3,7 +3,7 @@ extends layout
 block content
   - var product_list = {1:{'image': './assets/images/p1.jpg', 'image_medium': './assets/images/p1_medium.jpg, ./assets/images/p1_medium_retina.jpg 2x', 'image_small': './assets/images/p1_small.jpg, ./assets/images/p1_small_retina.jpg 2x', 'title': 'Item Title', 'category': 'Item1 Category', 'price': '$88.0'}, 2:{'image': './assets/images/p1.jpg', 'image_medium': './assets/images/p1_medium.jpg, ./assets/images/p1_medium_retina.jpg 2x', 'image_small': './assets/images/p1_small.jpg, ./assets/images/p1_small_retina.jpg 2x', 'title': 'Item Title', 'category': 'Item2 Category', 'price': '$98.0'}, 3:{'image': './assets/images/p1.jpg', 'image_medium': './assets/images/p1_medium.jpg, ./assets/images/p1_medium_retina.jpg 2x', 'image_small': './assets/images/p1_small.jpg, ./assets/images/p1_small_retina.jpg 2x', 'title': 'Item Title', 'category': 'Item3 Category', 'price': '$28.0'},4:{'image': './assets/images/p1.jpg', 'image_medium': './assets/images/p1_medium.jpg, ./assets/images/p1_medium_retina.jpg 2x', 'image_small': './assets/images/p1_small.jpg, ./assets/images/p1_small_retina.jpg 2x', 'title': 'Item Title', 'category': 'Item4 Category', 'price': '$67.0'}}
 
-    //include _slider
+    include partials/home/_slider
 
     h3.section__heading Intro Copy Headline
 
