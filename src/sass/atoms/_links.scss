@@ -1,8 +1,4 @@
 a {
   color: $primary-text-color;
   text-decoration: none;
-
-  &:hover, &:focus, &:active, &:visited {
-    border-bottom: 3px solid $anchor-state-color;
-  }
 }

@@ -29,6 +29,18 @@
   @include outer-container(100%);
 
   .navigation__item {
-    @include span-columns(1 of 6);
+    @include span-columns(2 of 10);
+    text-align: center;
+  }
+}
+
+.navigation__link {
+  display: block;
+  padding: 0.75em 0;
+  @include transition(all 0.2s ease-out);
+
+  &:hover, &:focus, &:active, &:visited {
+    @include transform(translate(0,-2px));
+    opacity: 0.5;
   }
 }
