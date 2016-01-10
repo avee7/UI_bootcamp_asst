@@ -8,17 +8,26 @@
 
 .page-title {
   @include span-columns(6);
+  @include omega();
 
-  @include media($medium) {
+  @include media($medium_to_large) {
+    @include span-columns(4);
+  }
+
+  @include media($large) {
     @include span-columns(3);
   }
-  @include omega();
 }
 
 .navigation {
   display: none;
 
-  @include media($medium) {
+  @include media($medium_to_large) {
+    @include span-columns(8);
+    @include omega();
+  }
+
+  @include media($large) {
     @include span-columns(6);
     @include shift(3);
     @include omega();

@@ -1,2 +1,4 @@
-$large: new-breakpoint(min-width 56.25em);
-$medium: new-breakpoint(min-width 43.75em);
+$medium: new-breakpoint(min-width $medium_breakpoint_value);
+$medium_to_large: new-breakpoint(min-width $medium_breakpoint_value max-width $large_breakpoint_value);
+$large: new-breakpoint(min-width $large_breakpoint_value);
+
