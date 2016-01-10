@@ -1,0 +1,37 @@
+.cart {
+  @include span-columns(2);
+  color: $sub-header-text-color;
+
+  @include media($medium) {
+    @include span-columns(1);
+    @include shift(6)
+  }
+}
+
+.sub-header__link {
+  color: $sub-header-text-color;
+  padding: 0.5em;
+  text-align: center;
+
+  @include border-width(null 1px);
+  @include border-color(null $sub-header-text-color);
+  @include border-style(null solid);
+  @include span-columns(4);
+
+  &:hover {
+    background-color: $sub-header-text-color;
+    color: $sub-header-link-hover-color;
+  }
+
+  @include media($medium) {
+    @include span-columns(2);
+  }
+}
+
+.sub-header__search {
+  @include span-columns(6);
+
+  @include media($medium) {
+    @include span-columns(3);
+  }
+}

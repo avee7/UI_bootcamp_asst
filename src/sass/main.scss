@@ -27,9 +27,11 @@
 @import "molecules/navigation-list";
 @import "molecules/product-list";
 @import "molecules/form_group";
+@import "molecules/cart";
 
 /*Organisms*/
 @import "organisms/header-navigation";
+@import "organisms/sub_header";
 @import "organisms/header";
 @import "organisms/content";
 @import "organisms/footer";

@@ -1,5 +1,6 @@
 .sub-header {
-  @include container-padding;
+  @include container-padding(0 1rem);
+  @include outer-container(100%);
   background-color: $sub-header-background-color;
 }
 

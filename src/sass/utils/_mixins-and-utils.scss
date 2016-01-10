@@ -16,14 +16,14 @@
 }
 
 @mixin container-padding($small-padding: 1rem, $medium-padding: 2rem, $large-padding: 4rem) {
-  padding: 1rem;
+  padding: $small-padding;
 
-  @include media($medium) {
-    padding-left: 2rem;
-    padding-right: 2rem;
+  @include media($medium_to_large) {
+    padding-left: $medium-padding;
+    padding-right: $medium-padding;
   }
   @include media($large) {
-    padding-left: 4rem;
-    padding-right: 4rem;
+    padding-left: $large-padding;
+    padding-right: $large-padding;
   }
 }

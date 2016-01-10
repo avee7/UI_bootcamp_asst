@@ -6,9 +6,8 @@ header.header
       .cart__icon
     a.link.sub-header__link(href='/my-account.html', title='Link to Account page') My Account
     form.sub-header__search(method='POST', action='/search', autocomplete)
-      label.label(for='search') Search Website
-      input#search(type='search', placeholder="Enter search terms", name='search')
-      button(type='submit') Search
+      input#search.search__input(type='search', placeholder="Enter search terms", name='search')
+      button.search__button(type='submit') Search
 
   .navigation__wrapper
     h1.page-title Page title

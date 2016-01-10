@@ -1,0 +1,30 @@
+.sub-header__search {
+  text-align: center;
+  .search__input {
+    border: none;
+    color: $search-input-text-color;
+    border-bottom: 1px solid $search-input-text-color ;
+    background-color: $search-input-background-color;
+
+    @include media($medium) {
+      width: 70%;
+    }
+  }
+
+  .search__button {
+    border: none;
+    background-color: $search-input-background-color;
+  }
+}
+
+.search__input::-moz-placeholder {
+  color: $search-input-text-color;
+}
+
+.search__input:-ms-input-placeholder {
+  color: $search-input-text-color;
+}
+
+.search__input::-webkit-input-placeholder {
+  color: $search-input-text-color;
+}
