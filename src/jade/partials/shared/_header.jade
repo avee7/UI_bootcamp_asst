@@ -1,13 +1,12 @@
 header.header
   .sub-header
     .cart
-      .cart__count
-        strong 12
-      .cart__icon
+      strong.cart__count 12
+      img.cart__icon(src='./assets/images/cart_icon.png')
     a.link.sub-header__link(href='/my-account.html', title='Link to Account page') My Account
     form.sub-header__search(method='POST', action='/search', autocomplete)
       input#search.search__input(type='search', placeholder="Enter search terms", name='search')
-      button.search__button(type='submit') Search
+      button.search__button(type='submit')
 
   .navigation__wrapper
     h1.page-title Page title

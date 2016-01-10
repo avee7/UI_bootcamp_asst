@@ -1,8 +1,11 @@
 .cart {
   @include span-columns(2);
+  padding-top: 0.4em;
+  text-align: center;
   color: $sub-header-text-color;
 
   @include media($medium) {
+    text-align: right;
     @include span-columns(1);
     @include shift(6)
   }

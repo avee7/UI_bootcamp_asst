@@ -1,5 +1,6 @@
 .sub-header__search {
   text-align: center;
+
   .search__input {
     border: none;
     color: $search-input-text-color;
@@ -13,7 +14,9 @@
 
   .search__button {
     border: none;
-    background-color: $search-input-background-color;
+    padding: 1em;
+    @include background(url('../../assets/images/search_icon.png'), no-repeat, $search-input-background-color);
+    background-size: cover;
   }
 }
 

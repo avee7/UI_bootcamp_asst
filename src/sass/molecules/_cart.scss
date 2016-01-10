@@ -1,4 +1,8 @@
 .cart__count {
-  text-align: center;
-  padding-top: 0.5em;
+  position: relative;
+  bottom: 0.3em;
+  padding-right: 0.25em;
+}
+.cart__icon {
+  width: 1.5em;
 }
